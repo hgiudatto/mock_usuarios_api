@@ -1,6 +1,11 @@
 /* eslint-disable prettier/prettier */
-export interface Nickname {
+import { IsString, MinLength } from 'class-validator'/* eslint-disable prettier/prettier *//* eslint-disable prettier/prettier */
+export class Nickname {
+
+  @IsString()
+  @MinLength(3)
   consumer_id: string;
+
   channel: string;
   ip_address: string;
   terminal: string;

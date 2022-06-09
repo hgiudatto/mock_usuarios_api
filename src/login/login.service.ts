@@ -23,7 +23,7 @@ export class LoginService {
   };
 
   // TODO: Setear response header: Content-Type - Resp Status 
-  postNicknameCanalP(channel: string): Nickname {
+  postNicknameCanalP(): Nickname {
     // TODO: Reemplazar por RespNicknameChannelP y validar channel si es P retornar un body resp y si es O otro. 
     return this.nickname;
   }

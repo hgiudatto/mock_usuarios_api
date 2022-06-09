@@ -11,10 +11,13 @@ export class LoginController {
   constructor(private loginService: LoginService) {}
 
   @Post('/nicknameCanalP')
-  loginNicknameCanalP(): Nickname {
-     // * console.log(`Channel: ${nickname.channel}`);
-     // * return 'Returning login';
-     return this.loginService.postNicknameCanalP('P')
+  loginNicknameCanalP(@Body() body: Nickname) {
+    return {
+      message: 'Post NickName Canal P',
+      data: {...body},
+    }
+
+    // return this.loginService.postNicknameCanalP()
   }
 
   @Post('/canalLInterconexion')

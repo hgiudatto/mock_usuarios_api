@@ -1,0 +1,37 @@
+
+### default
+
+GET http://localhost:3000/
+
+
+### nicknameCanalP
+
+POST http://localhost:3000/login/nicknameCanalP
+Content-Type: application/json
+
+{
+  "consumer_id": "1234",
+  "channel": "P",
+  "ip_address": "",
+  "terminal": "",
+  "timestamp": "",
+  "origin": "",
+  "sub_code": "",
+  "client": {
+    "document_number": "",
+    "document_type": "",
+    "password": "",
+    "strong_key": "",
+    "card_number": ""
+  }
+}
+
+
+### canalLInterconexion
+
+POST http://localhost:3000/login/canalLInterconexion
+Content-Type: application/json
+
+{
+    
+}
