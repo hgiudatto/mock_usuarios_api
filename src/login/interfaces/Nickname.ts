@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
-import { IsString, MinLength } from 'class-validator'/* eslint-disable prettier/prettier *//* eslint-disable prettier/prettier */
+import { IsString, MaxLength, MinLength } from 'class-validator'/* eslint-disable prettier/prettier *//* eslint-disable prettier/prettier */
 export class Nickname {
 
   @IsString()
   @MinLength(3)
+  @MaxLength(15)  
   consumer_id: string;
 
   channel: string;

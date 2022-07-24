@@ -10,8 +10,8 @@ POST http://localhost:3000/login/nicknameCanalP
 Content-Type: application/json
 
 {
-  "consumer_id": "1234",
-  "channel": "P",
+  "consumer_id": "12345675678754345678987654",
+  "channel": "L",
   "ip_address": "",
   "terminal": "",
   "timestamp": "",
